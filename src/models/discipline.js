@@ -1,0 +1,23 @@
+const discipline = {
+    maths:{
+        disciplineId:1,
+        nom:"maths",
+        type:"sciences",
+        listeNoteCode:[],
+        listeMoyenneCode:[]
+    },
+    physique:{
+        disciplineId:2,
+        nom:"physique",
+        type:"sciences",
+        listeNodeCode:[],
+        listeMoyenneCode:[]
+    },
+    français:{
+        disciplineId:3,
+        nom:"français",
+        type:"litterature",
+        listeNodeCode:[],
+        listeMoyenneCode:[]
+    }
+}

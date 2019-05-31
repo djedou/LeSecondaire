@@ -1,12 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Loadable from 'react-loadable';
+import Loading from "./components/spinners/Loading";
+
+const mobile = () => {
+
+    let size = window.screen.availWidth;
+    if(size > 768){
+        return false;
+    }
+    else {
+        return true;
+    } 
+}
+
+
+
+
+const App = mobile() ?  Loadable({
+    loader: () => import("./AppMobile"),
+    loading: Loading,
+  }) : Loadable({
+    loader: () => import("./AppDesktop"),
+    loading: Loading,
+  });
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
