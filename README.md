@@ -21,7 +21,7 @@ section `Tester`
 
 ## Tester 
 1. Cloner le repo: `git clone https://github.com/djedou/LeSecondaire.git`  
-1. Se deplacer dans le dossier Edjambo: `cd lesecondaire`  
+1. Se deplacer dans le dossier lesecondaire: `cd lesecondaire`  
 1. Effectuer les commandes suivantes:  
    `npm install`  
    `npm run start`  
