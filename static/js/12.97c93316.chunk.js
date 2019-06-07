@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{62:function(e,n,r){"use strict";r.r(n);var t=r(0),u=r.n(t);n.default=function(){return u.a.createElement("div",null,"Prefesseur")}}}]);
-//# sourceMappingURL=12.97c93316.chunk.js.map
