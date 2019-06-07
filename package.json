@@ -5,7 +5,7 @@
   "bugs": {
     "url": "https://github.com/djedou/LeSecondaire/issues"
   },
-  "homepage": "https://djedou.github.io/LeSecondaire",
+  "homepage": "https://djedou.github.io/LeSecondaire/",
   "dependencies": {
     "@material-ui/styles": "^4.0.1",
     "gh-pages": "^2.0.1",

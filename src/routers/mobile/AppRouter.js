@@ -35,11 +35,11 @@ function AppRouter() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <Switch>
-          <Route exact path="/" component={Login} />
-          <Route path="/administration" component={Administration} />
-          <Route path="/professeur" component={Professeur} />
-          <Route path="/eleve" component={Eleve} />
-          <Route path="/parent" component={Parent} />
+          <Route exact path={`/`} component={Login} />
+          <Route path={`/administration`} component={Administration} />
+          <Route path={`/professeur`} component={Professeur} />
+          <Route path={`/eleve`} component={Eleve} />
+          <Route path={`/parent`} component={Parent} />
       </Switch>
     </Router>
   );
