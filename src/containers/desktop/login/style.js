@@ -25,6 +25,7 @@ const styles = {
       color: "blue",
       borderRadius: "2em",
       fontSize: "1.3em",
+      cursor: "pointer"
     },
     title:{
       color: "white",

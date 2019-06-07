@@ -1,13 +1,17 @@
 import React from "react";
+import { Route } from 'react-router-dom'
 
-const LoginOption = (props) => {
-
-    const {logOpt, logTitle} = props;
-    return (
-        <div className={logOpt}>
-            {logTitle}
-        </div>
-    )
-}
+const LoginOption = ({logOpt, logTitle, path}) => (
+        <Route render={({ history}) => (
+            <div 
+                className={logOpt}
+                onClick={() => { history.push(`/${path}`) }}
+            >
+                {logTitle}
+            </div>
+            
+          )} 
+        />
+)
 
 export default LoginOption;

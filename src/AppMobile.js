@@ -1,12 +1,20 @@
 import React from 'react';
 import './AppMobile.css';
-import Login from "./containers/login/MLogin";
+import { StateProvider } from "./services/stateManager/stateProvider";
+import { mainReducer } from "./services/stateManager/reducers/mainReducer";
+import { initialState } from "./services/stateManager/constants/initialState";
+import AppRouter from "./routers/mobile/AppRouter";
+
+
 
 function AppMobile() {
   return (
-    <div className="App">
-      <Login/>
-    </div>
+    <StateProvider 
+      initialState={initialState} 
+      reducer={mainReducer}
+    >
+      <AppRouter/>
+    </StateProvider>
   );
 }
 
