@@ -33,7 +33,7 @@ function AppRouter() {
 
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
           <Route exact path="/" component={Login} />
           <Route path="/administration" component={Administration} />
