@@ -2,29 +2,13 @@ import React from "react";
 import { withStyles } from '@material-ui/styles';
 import styles from "./style"
 import LoginOption from "../../../components/login/LoginOption";
+import { useDefaultState } from "../../../services/stateManager/hooks/useDefaultState"
 
 const Login = (props) => {
 
     const { classes } = props;
-    const personnel = [
-        {
-            title:"Administration",
-            path:"administration"
-        },
-        {
-            title:"Professeur",
-            path:"professeur"
-        },
-        {
-            title:"Elève",
-            path:"eleve"
-        },
-        {
-            title:"Parent",
-            path:"parent"
-        }
-    ];
-    const LoginItems = personnel.map((item) =>{
+    const [state] = useDefaultState();
+    const LoginItems = state.personnel.map((item) =>{
         return (
             <LoginOption
                 key={item.title}
@@ -42,7 +26,7 @@ const Login = (props) => {
                 {LoginItems}
             </div>
         </div>
-    )
+    ) 
 }
 
 export default withStyles(styles)(Login);

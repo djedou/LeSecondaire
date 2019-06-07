@@ -8,8 +8,6 @@ import AppRouter from "./routers/desktop/AppRouter";
 
 function AppDesktop() {
 
-
-
   return (
     <StateProvider 
       initialState={initialState} 
